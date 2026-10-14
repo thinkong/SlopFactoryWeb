@@ -1,5 +1,4 @@
 ---
-# TODO ko: translate title and description.
-title: "Our Games"
-description: "Fresh off the conveyor belt. All free, all in your browser, all 100% certified slop."
+title: "우리 게임"
+description: "컨베이어 벨트에서 갓 내려왔어요. 전부 무료, 전부 브라우저에서, 전부 100% 인증 슬롭이에요."
 ---

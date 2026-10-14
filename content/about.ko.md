@@ -1,26 +1,25 @@
 ---
-# TODO ko: placeholder copy of about.md. Translate the title and body.
-title: "About the Factory"
+title: "공장 소개"
 ---
 
-**Slop Factory** is a tiny game studio with one mission: put small, weird, free games on the internet, and show our work while we do it.
+**Slop Factory(슬롭 팩토리)**는 아주 작은 게임 스튜디오예요. 목표는 하나, 작고 이상하고 무료인 게임을 인터넷에 올리고, 만드는 과정도 숨기지 않고 보여 주는 거예요.
 
-## What we make
+## 우리가 만드는 것
 
-Bite-sized browser games. No installs, no accounts, no 40 GB day-one patch. You click a link, you play. If a game takes longer to load than to understand, we've failed and we'll write a devlog about it.
+한입 크기의 브라우저 게임이에요. 설치도, 계정도, 출시 첫날 40GB 패치도 없어요. 링크를 누르면 바로 플레이할 수 있어요. 게임을 이해하는 것보다 로딩이 더 오래 걸린다면 저희가 실패한 거예요. 그럴 땐 그것도 개발 일지로 쓸게요.
 
-## How we make it
+## 만드는 방법
 
-Every game goes down the same conveyor belt:
+모든 게임은 같은 컨베이어 벨트를 타고 내려와요.
 
-1. **Concept.** Pick an idea small enough to actually finish.
-2. **Prototype.** Make it playable with placeholder everything.
-3. **Production.** Art, audio, menus, juice.
-4. **QA.** A robot plays it until it breaks. Then we fix it. Then the robot plays it again.
-5. **Ship it.** It lands in [Our Games](../games/) and the story lands on the [Blog](../blog/).
+1. **콘셉트.** 끝까지 만들 수 있을 만큼 작은 아이디어를 골라요.
+2. **프로토타입.** 전부 임시 소재로 일단 플레이되게 만들어요.
+3. **프로덕션.** 그래픽, 소리, 메뉴, 손맛을 얹어요.
+4. **QA.** 로봇이 망가질 때까지 플레이해요. 저희가 고치고, 로봇이 다시 플레이해요.
+5. **출시.** 게임은 [게임](../games/) 페이지에, 만든 이야기는 [블로그](../blog/)에 올라가요.
 
-Every screenshot in our devlogs comes from a real build of the game. No mockups, no concept art painted after the fact. Just honest, free-range slop.
+개발 일지 속 스크린샷은 전부 실제 게임 빌드에서 찍은 거예요. 목업도, 나중에 그려 넣은 콘셉트 아트도 없어요. 정직하고 방목해서 키운 슬롭뿐이에요.
 
-## Is it really slop?
+## 이게 정말 슬롭이에요?
 
-It's a term of endearment. We like our games the way we like our cafeteria lunches: cheap, warm, and surprisingly satisfying.
+애정을 담아 부르는 말이에요. 저희는 게임을 급식처럼 좋아해요. 싸고, 따뜻하고, 의외로 든든하니까요.

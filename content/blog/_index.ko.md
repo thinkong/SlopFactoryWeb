@@ -1,5 +1,4 @@
 ---
-# TODO ko: translate title and description.
-title: "Blog"
-description: "Devlogs, postmortems and assorted factory-floor gossip. Every screenshot comes from a real build."
+title: "블로그"
+description: "개발 일지, 회고, 그리고 공장 바닥에서 들려오는 잡담. 스크린샷은 전부 실제 빌드에서 찍었어요."
 ---
