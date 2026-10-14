@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ site.Title }} | {{ site.Params.tagline }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-  {{- $desc := .Params.summary | default .Params.description | default site.Params.description }}
+  <title>{{ if .IsHome }}{{ site.Title }} | {{ i18n "tagline" }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  {{- $desc := .Params.summary | default .Params.description | default (i18n "site_description") }}
   <meta name="description" content="{{ $desc | plainify }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ $desc | plainify }}">
@@ -15,6 +15,14 @@
   {{- end }}{{ end }}
   <meta name="theme-color" content="#14110f">
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  {{- if and .IsTranslated (ne .Kind "404") }}
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+  {{- if eq .Language.Lang (index hugo.Sites 0).Language.Lang }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{- end }}
+  {{- end }}
+  {{- end }}
   {{- range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
   {{- end }}
@@ -22,7 +30,7 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 </head>
 <body class="{{ .Section | default "home" }}">
-  <a class="skip" href="#main">Skip to the slop</a>
+  <a class="skip" href="#main">{{ i18n "skip_link" }}</a>
   {{ partial "header.html" . }}
   <main id="main">
     {{ block "main" . }}{{ end }}

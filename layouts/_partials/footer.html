@@ -2,15 +2,15 @@
   <div class="hazard" aria-hidden="true"></div>
   <div class="footer-inner">
     <p class="footer-logo">SLOP FACTORY</p>
-    <p>&copy; {{ now.Year }} Slop Factory. All slop reserved. Made with Hugo, hosted on GitHub Pages, powered by vibes.</p>
+    <p>&copy; {{ now.Year }} {{ i18n "footer_copyright" }}</p>
     <p class="footer-links">
-      <a href="{{ "games/" | relURL }}">Our Games</a>
-      <a href="{{ "blog/" | relURL }}">Blog</a>
-      <a href="{{ "about/" | relURL }}">About</a>
+      <a href="{{ "games/" | relLangURL }}">{{ i18n "menu_games" }}</a>
+      <a href="{{ "blog/" | relLangURL }}">{{ i18n "menu_blog" }}</a>
+      <a href="{{ "about/" | relLangURL }}">{{ i18n "menu_about" }}</a>
       {{- with site.Home.OutputFormats.Get "rss" }}
-      <a href="{{ .RelPermalink }}">RSS</a>
+      <a href="{{ .RelPermalink }}">{{ i18n "footer_rss" }}</a>
       {{- end }}
     </p>
-    <p class="fine-print">No slop was harmed in the making of this website. Side effects may include "just one more hop".</p>
+    <p class="fine-print">{{ i18n "footer_fine_print" }}</p>
   </div>
 </footer>

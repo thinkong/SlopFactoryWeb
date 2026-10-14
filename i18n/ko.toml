@@ -1,0 +1,136 @@
+# Korean UI strings. Placeholders are English and marked "# TODO ko": replace the text
+# in quotes with Korean and delete the TODO line. Keep keys, HTML tags and {{ .Something }} as-is.
+
+# ---------- site ----------
+# TODO ko
+tagline = "Artisanal slop. Hand-churned by robots. Served hot."
+# TODO ko
+site_description = "Slop Factory makes small, weird, free browser games and writes a devlog about how each one was made. Now with 40% more slop."
+# TODO ko
+skip_link = "Skip to the slop"
+# TODO ko
+home_label = "Slop Factory home"
+# TODO ko
+nav_label = "Main"
+# TODO ko
+language_label = "Language"
+
+# Date layouts use Go's reference date (Jan 2, 2006). Already Korean: renders as 2026년 10월 14일.
+date_short = "2006년 1월 2일"
+date_long = "2006년 1월 2일"
+
+# ---------- menu (keyed by menu identifier in hugo.toml) ----------
+# TODO ko
+menu_games = "Our Games"
+# TODO ko
+menu_blog = "Blog"
+# TODO ko
+menu_about = "About"
+
+# ---------- ticker ----------
+# TODO ko
+ticker_1 = "NOW SERVING: ORBIT HOP 1.0"
+# TODO ko
+ticker_2 = "100% FREE-RANGE SLOP"
+# TODO ko
+ticker_3 = "NO INSTALLS. NO ACCOUNTS. NO REFUNDS (IT'S FREE)"
+# TODO ko
+ticker_4 = "BUILT BY ROBOTS, TESTED BY MORE ROBOTS"
+# TODO ko
+ticker_5 = "NEW DEVLOGS DAILY*"
+# TODO ko
+ticker_6 = "*NOT DAILY"
+# TODO ko
+ticker_7 = "CERTIFIED HUMAN-ADJACENT"
+
+# ---------- footer ----------
+# TODO ko
+footer_copyright = "Slop Factory. All slop reserved. Made with Hugo, hosted on GitHub Pages, powered by vibes."
+# TODO ko
+footer_rss = "RSS"
+# TODO ko
+footer_fine_print = "No slop was harmed in the making of this website. Side effects may include \"just one more hop\"."
+
+# ---------- home ----------
+# TODO ko
+home_kicker = "Est. 2026 &middot; Fresh batch daily*"  # HTML
+# TODO ko
+home_headline = "WE MAKE <span class=\"slime\">SLOP</span><br>YOU PLAY IT"  # HTML
+# TODO ko
+home_play_games = "Play our games"
+# TODO ko
+home_read_devlogs = "Read the devlogs"
+# TODO ko
+home_fine_print = "*batches not actually daily"
+# TODO ko
+stats_label = "Factory stats"
+# TODO ko
+stats_games = "games shipped"
+# TODO ko
+stats_posts = "devlogs written"
+# TODO ko
+stats_installs = "installs required"
+# TODO ko
+stats_slop = "slop remaining"
+# TODO ko
+home_games_heading = "Our Games"
+# TODO ko
+home_all_games = "See all games"
+# TODO ko
+home_blog_heading = "Fresh from the Blog"
+# TODO ko
+home_all_posts = "All posts"
+
+# ---------- cards ----------
+# TODO ko
+play_now = "Play now"
+# TODO ko
+read_more = "Read the slop"
+# TODO ko
+coming_soon_title = "GAME #{{ .Number }}"
+# TODO ko
+coming_soon_home = "Currently bubbling in the vat. Check the blog for updates."
+# TODO ko
+coming_soon_games = "Currently bubbling in the vat. Follow the <a href=\"{{ .BlogURL }}\">blog</a> to watch it ooze into existence."  # HTML
+
+# ---------- lists and posts ----------
+# TODO ko
+browse_by_tag = "Browse by tag"
+# TODO ko
+no_posts_yet = "Nothing in this vat yet. Check back soon."
+# TODO ko
+back_to_blog = "Back to the blog"
+# TODO ko
+min_read = "{{ .Minutes }} min read"
+
+# ---------- game pages ----------
+# TODO ko
+all_games = "All games"
+# TODO ko
+play_title = "Play {{ .Title }}"
+# TODO ko
+open_full_screen = "Open full screen"
+# TODO ko
+controls = "Controls:"
+# TODO ko
+spec_sheet = "Spec sheet"
+# TODO ko
+spec_status = "Status"
+# TODO ko
+spec_version = "Version"
+# TODO ko
+spec_released = "Released"
+# TODO ko
+spec_platforms = "Plays on"
+# TODO ko
+spec_price = "Price"
+# TODO ko
+spec_price_value = "Free. Slop is a human right."
+# TODO ko
+devlog_heading = "Devlog"
+
+# ---------- 404 ----------
+# TODO ko
+not_found_lede = "This page fell into the slop vat. We are not going in after it."
+# TODO ko
+not_found_back = "Back to the factory floor"

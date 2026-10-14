@@ -1,20 +1,23 @@
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    {{- $items := slice "NOW SERVING: ORBIT HOP 1.0" "100% FREE-RANGE SLOP" "NO INSTALLS. NO ACCOUNTS. NO REFUNDS (IT'S FREE)" "BUILT BY ROBOTS, TESTED BY MORE ROBOTS" "NEW DEVLOGS DAILY*" "*NOT DAILY" "CERTIFIED HUMAN-ADJACENT" }}
+    {{- $items := slice (i18n "ticker_1") (i18n "ticker_2") (i18n "ticker_3") (i18n "ticker_4") (i18n "ticker_5") (i18n "ticker_6") (i18n "ticker_7") }}
     {{- range seq 2 }}
     {{- range $items }}<span>{{ . }}</span><span class="dot">&#9679;</span>{{ end }}
     {{- end }}
   </div>
 </div>
 <header class="site-header">
-  <a class="logo" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Title }} home">
+  <a class="logo" href="{{ site.Home.RelPermalink }}" aria-label="{{ i18n "home_label" }}">
     <span class="logo-blob" aria-hidden="true">{{ partial "blob.svg" . }}</span>
     <span class="logo-text">SLOP<span>FACTORY</span></span>
   </a>
-  <nav class="site-nav" aria-label="Main">
-    {{- range site.Menus.main }}
-    {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
-    <a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
-    {{- end }}
-  </nav>
+  <div class="header-right">
+    <nav class="site-nav" aria-label="{{ i18n "nav_label" }}">
+      {{- range site.Menus.main }}
+      {{- $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+      <a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ i18n (printf "menu_%s" .Identifier) | default .Name }}</a>
+      {{- end }}
+    </nav>
+    {{ partial "lang-switch.html" . }}
+  </div>
 </header>
