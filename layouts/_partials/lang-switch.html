@@ -1,0 +1,14 @@
+{{- /* EN / 한국어 switcher. Links to this page in the other language, or to that language's home if it has no translation yet. */ -}}
+{{- $page := . }}
+<nav class="lang-switch" aria-label="{{ i18n "language_label" }}">
+  {{- range hugo.Sites }}
+  {{- $lang := .Language.Lang }}
+  {{- if eq $lang site.Language.Lang }}
+  <span lang="{{ .Language.Locale }}" aria-current="true">{{ .Language.Label }}</span>
+  {{- else }}
+  {{- $href := .Home.RelPermalink }}
+  {{- range $page.Translations }}{{ if eq .Language.Lang $lang }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
+  <a href="{{ $href }}" lang="{{ .Language.Locale }}" hreflang="{{ .Language.Locale }}">{{ .Language.Label }}</a>
+  {{- end }}
+  {{- end }}
+</nav>

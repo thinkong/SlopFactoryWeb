@@ -12,7 +12,21 @@
   --shadow: 6px 6px 0 var(--ink);
   --font-meme: Impact, Haettenschweiler, "Arial Narrow Bold", "Anton", sans-serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-brand: Impact, Haettenschweiler, "Arial Narrow Bold", "Anton", sans-serif;
+  --font-hangul: Pretendard, "Pretendard Variable", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", "Nanum Gothic";
 }
+/* Korean pages: Impact has no Hangul, so headings switch to a heavy Korean system font.
+   keep-all breaks lines between words instead of mid-word. */
+:lang(ko) {
+  --font-meme: var(--font-hangul), Impact, sans-serif;
+  --font-body: var(--font-hangul), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+:lang(ko) .meme, :lang(ko) .meme-sm, :lang(ko) .btn, :lang(ko) .prose h2, :lang(ko) .sticker, :lang(ko) .meter b { font-weight: 900; letter-spacing: 0; }
+:lang(ko) .meme { line-height: 1.15; }
+:lang(ko) .site-nav a, :lang(ko) .kicker, :lang(ko) .meter span, :lang(ko) .ticker { letter-spacing: 0; }
+:lang(ko) .logo-text, :lang(ko) .footer-logo { font-family: var(--font-brand); font-weight: 400; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -54,6 +68,11 @@ img { max-width: 100%; height: auto; }
 }
 .site-nav a:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--ink); }
 .site-nav a[aria-current="page"] { background: var(--slime); }
+.header-right { display: flex; align-items: center; gap: .5rem 1rem; flex-wrap: wrap; }
+.lang-switch { display: flex; border: 3px solid var(--ink); border-radius: 999px; overflow: hidden; background: #fff; box-shadow: 3px 3px 0 var(--ink); font-weight: 800; font-size: .85rem; }
+.lang-switch a, .lang-switch span { padding: .3rem .75rem; text-decoration: none; color: var(--ink); word-break: keep-all; }
+.lang-switch span { background: var(--ink); color: var(--slime); }
+.lang-switch a:hover { background: var(--slime); }
 
 /* ---------- type ---------- */
 .meme, .meme-sm {

@@ -4,7 +4,7 @@ slug: "line-inspector"
 date: 2026-10-14T06:30:00Z
 summary: "You're the quality inspector at the end of a toy factory line. Approve or reject every toy against a rulebook that changes every shift. Three mistakes and you're off the line."
 cover: "line-inspector-devlog06-title-best-tablet.png"
-version: "1.0.0"
+version: "1.1.0"
 status: "Released"
 platforms: ["Desktop browser", "Phone browser", "Tablet browser"]
 controls: "Swipe right, press → or D to approve. Swipe left, press ← or A to reject. Or tap the buttons."

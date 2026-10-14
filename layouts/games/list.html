@@ -9,8 +9,8 @@
     {{ partial "game-card.html" . }}
     {{- end }}
     <div class="card coming-soon">
-      <p class="meme-sm">GAME #{{ add (len .Pages) 1 }}</p>
-      <p>Currently bubbling in the vat. Follow the <a href="{{ "blog/" | relURL }}">blog</a> to watch it ooze into existence.</p>
+      <p class="meme-sm">{{ i18n "coming_soon_title" (dict "Number" (add (len .Pages) 1)) }}</p>
+      <p>{{ i18n "coming_soon_games" (dict "BlogURL" ("blog/" | relLangURL)) | safeHTML }}</p>
     </div>
   </div>
 </section>

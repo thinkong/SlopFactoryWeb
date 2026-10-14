@@ -2,13 +2,13 @@
 <article class="post">
   <header class="post-head">
     {{- if eq .Section "blog" }}
-    <a class="back" href="{{ "blog/" | relURL }}">&larr; Back to the blog</a>
+    <a class="back" href="{{ "blog/" | relLangURL }}">&larr; {{ i18n "back_to_blog" }}</a>
     {{- end }}
     <h1>{{ .Title }}</h1>
     {{- if eq .Section "blog" }}
     <p class="meta">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-      &middot; {{ .ReadingTime }} min read
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format (i18n "date_long") }}</time>
+      &middot; {{ i18n "min_read" (dict "Minutes" .ReadingTime) }}
       {{- with .Params.game }}{{ with site.GetPage (printf "/games/%s" .) }}
       &middot; <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{- end }}{{ end }}

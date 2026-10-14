@@ -1,0 +1,81 @@
+# English UI strings. Every key here must also exist in ko.toml.
+# Strings marked "HTML" may contain markup and are rendered as-is.
+# {{ .Something }} is filled in by the template; keep it in the translation.
+
+# ---------- site ----------
+tagline = "Artisanal slop. Hand-churned by robots. Served hot."
+site_description = "Slop Factory makes small, weird, free browser games and writes a devlog about how each one was made. Now with 40% more slop."
+skip_link = "Skip to the slop"
+home_label = "Slop Factory home"
+nav_label = "Main"
+language_label = "Language"
+
+# Date layouts use Go's reference date (Jan 2, 2006). Month names follow the language.
+date_short = "Jan 2, 2006"
+date_long = "January 2, 2006"
+
+# ---------- menu (keyed by menu identifier in hugo.toml) ----------
+menu_games = "Our Games"
+menu_blog = "Blog"
+menu_about = "About"
+
+# ---------- ticker ----------
+ticker_1 = "NOW SERVING: ORBIT HOP 1.0"
+ticker_2 = "100% FREE-RANGE SLOP"
+ticker_3 = "NO INSTALLS. NO ACCOUNTS. NO REFUNDS (IT'S FREE)"
+ticker_4 = "BUILT BY ROBOTS, TESTED BY MORE ROBOTS"
+ticker_5 = "NEW DEVLOGS DAILY*"
+ticker_6 = "*NOT DAILY"
+ticker_7 = "CERTIFIED HUMAN-ADJACENT"
+
+# ---------- footer ----------
+footer_copyright = "Slop Factory. All slop reserved. Made with Hugo, hosted on GitHub Pages, powered by vibes."
+footer_rss = "RSS"
+footer_fine_print = "No slop was harmed in the making of this website. Side effects may include \"just one more hop\"."
+
+# ---------- home ----------
+home_kicker = "Est. 2026 &middot; Fresh batch daily*"  # HTML
+home_headline = "WE MAKE <span class=\"slime\">SLOP</span><br>YOU PLAY IT"  # HTML
+home_play_games = "Play our games"
+home_read_devlogs = "Read the devlogs"
+home_fine_print = "*batches not actually daily"
+stats_label = "Factory stats"
+stats_games = "games shipped"
+stats_posts = "devlogs written"
+stats_installs = "installs required"
+stats_slop = "slop remaining"
+home_games_heading = "Our Games"
+home_all_games = "See all games"
+home_blog_heading = "Fresh from the Blog"
+home_all_posts = "All posts"
+
+# ---------- cards ----------
+play_now = "Play now"
+read_more = "Read the slop"
+coming_soon_title = "GAME #{{ .Number }}"
+coming_soon_home = "Currently bubbling in the vat. Check the blog for updates."
+coming_soon_games = "Currently bubbling in the vat. Follow the <a href=\"{{ .BlogURL }}\">blog</a> to watch it ooze into existence."  # HTML
+
+# ---------- lists and posts ----------
+browse_by_tag = "Browse by tag"
+no_posts_yet = "Nothing in this vat yet. Check back soon."
+back_to_blog = "Back to the blog"
+min_read = "{{ .Minutes }} min read"
+
+# ---------- game pages ----------
+all_games = "All games"
+play_title = "Play {{ .Title }}"
+open_full_screen = "Open full screen"
+controls = "Controls:"
+spec_sheet = "Spec sheet"
+spec_status = "Status"
+spec_version = "Version"
+spec_released = "Released"
+spec_platforms = "Plays on"
+spec_price = "Price"
+spec_price_value = "Free. Slop is a human right."
+devlog_heading = "Devlog"
+
+# ---------- 404 ----------
+not_found_lede = "This page fell into the slop vat. We are not going in after it."
+not_found_back = "Back to the factory floor"

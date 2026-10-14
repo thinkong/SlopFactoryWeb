@@ -2,10 +2,10 @@
   <a class="card-link" href="{{ .RelPermalink }}">
     <div class="card-img">{{ partial "cover.html" (dict "page" . "width" 640) }}</div>
     <div class="card-body">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format (i18n "date_short") }}</time>
       <h3>{{ .Title }}</h3>
       <p>{{ .Summary | plainify }}</p>
-      <span class="read-more">Read the slop &rarr;</span>
+      <span class="read-more">{{ i18n "read_more" }} &rarr;</span>
     </div>
   </a>
 </article>

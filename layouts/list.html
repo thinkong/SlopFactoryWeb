@@ -7,11 +7,13 @@
   <div class="grid posts-grid">
     {{- range .Pages.ByDate.Reverse }}
     {{ partial "post-card.html" . }}
+    {{- else }}
+    <p>{{ i18n "no_posts_yet" }}</p>
     {{- end }}
   </div>
   {{- with site.Taxonomies.tags }}{{ if eq $.Section "blog" }}
   <div class="tag-cloud">
-    <h2 class="meme-sm">Browse by tag</h2>
+    <h2 class="meme-sm">{{ i18n "browse_by_tag" }}</h2>
     {{- range .ByCount }}
     <a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <small>{{ .Count }}</small></a>
     {{- end }}

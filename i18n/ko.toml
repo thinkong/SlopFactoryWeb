@@ -1,0 +1,82 @@
+# Korean UI strings. Every key here must also exist in en.toml.
+# Terms and tone follow the Korean glossary and style guide (docs/ko-glossary.md, docs/ko-style-guide.md).
+# Strings marked "HTML" may contain markup and are rendered as-is.
+# {{ .Something }} is filled in by the template; keep it in the translation.
+
+# ---------- site ----------
+tagline = "장인이 빚은 슬롭. 로봇이 손으로 젓고, 뜨끈하게 나가요."
+site_description = "Slop Factory는 작고, 이상하고, 무료인 브라우저 게임을 만들고, 게임마다 어떻게 만들었는지 개발 일지로 남겨요. 이제 슬롭 40% 증량."
+skip_link = "슬롭으로 바로 가기"
+home_label = "Slop Factory 홈"
+nav_label = "메인 메뉴"
+language_label = "언어"
+
+# Date layouts use Go's reference date (Jan 2, 2006). Renders as 2026년 10월 14일 / 2026. 10. 14.
+date_short = "2006. 1. 2."
+date_long = "2006년 1월 2일"
+
+# ---------- menu (keyed by menu identifier in hugo.toml) ----------
+menu_games = "게임"
+menu_blog = "블로그"
+menu_about = "소개"
+
+# ---------- ticker ----------
+ticker_1 = "지금 서빙 중: Orbit Hop 1.0"
+ticker_2 = "100% 방목 슬롭"
+ticker_3 = "설치 없음. 계정 없음. 환불 없음(무료라서)"
+ticker_4 = "로봇이 만들고, 더 많은 로봇이 테스트"
+ticker_5 = "개발 일지 매일 업데이트*"
+ticker_6 = "*매일은 아님"
+ticker_7 = "사람 비스무리 인증 완료"
+
+# ---------- footer ----------
+footer_copyright = "Slop Factory. 모든 슬롭 보유. Hugo로 만들고, GitHub Pages에 올리고, 동력은 느낌적인 느낌."
+footer_rss = "RSS"
+footer_fine_print = "이 웹사이트를 만드는 동안 다친 슬롭은 없어요. 부작용으로 '한 판만 더' 증상이 나타날 수 있어요."
+
+# ---------- home ----------
+home_kicker = "2026년 설립 &middot; 매일 갓 나온 슬롭*"  # HTML
+home_headline = "<span class=\"slime\">슬롭</span>은 저희가<br>플레이는 여러분이"  # HTML
+home_play_games = "게임 하러 가기"
+home_read_devlogs = "개발 일지 보기"
+home_fine_print = "*실제로 매일은 아니에요"
+stats_label = "공장 현황"
+stats_games = "출시한 게임"
+stats_posts = "쓴 개발 일지"
+stats_installs = "필요한 설치"
+stats_slop = "남은 슬롭"
+home_games_heading = "우리 게임"
+home_all_games = "게임 전체 보기"
+home_blog_heading = "따끈한 블로그 글"
+home_all_posts = "글 전체 보기"
+
+# ---------- cards ----------
+play_now = "지금 플레이"
+read_more = "슬롭 읽기"
+coming_soon_title = "게임 #{{ .Number }}"
+coming_soon_home = "지금 통 안에서 보글보글 끓는 중이에요. 소식은 블로그에서 확인하세요."
+coming_soon_games = "지금 통 안에서 보글보글 끓는 중이에요. <a href=\"{{ .BlogURL }}\">블로그</a>를 지켜보면 슬롭이 꾸역꾸역 완성되는 과정을 볼 수 있어요."  # HTML
+
+# ---------- lists and posts ----------
+browse_by_tag = "태그로 찾기"
+no_posts_yet = "이 통은 아직 비었어요. 곧 다시 들러 주세요."
+back_to_blog = "블로그로 돌아가기"
+min_read = "{{ .Minutes }}분 분량"
+
+# ---------- game pages ----------
+all_games = "전체 게임"
+play_title = "{{ .Title }} 플레이"
+open_full_screen = "전체 화면으로 열기"
+controls = "조작법:"
+spec_sheet = "제품 사양서"
+spec_status = "상태"
+spec_version = "버전"
+spec_released = "출시일"
+spec_platforms = "플랫폼"
+spec_price = "가격"
+spec_price_value = "무료. 슬롭은 인권이니까요."
+devlog_heading = "개발 일지"
+
+# ---------- 404 ----------
+not_found_lede = "이 페이지는 슬롭 통에 빠졌어요. 건지러 들어가진 않을 거예요."
+not_found_back = "작업장으로 돌아가기"
