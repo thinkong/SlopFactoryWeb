@@ -72,7 +72,7 @@ Game titles stay English because they are drawn as logos in the Orbitron font, a
 | SCREEN SHAKE | 화면 흔들림 | |
 | VIBRATION | 진동 | |
 | not available in this browser | 이 브라우저에서는 쓸 수 없어요 | |
-| All sound is muted | 소리가 꺼져 있어요(스피커 버튼으로 켜기) | No space before the bracket. |
+| All sound is muted | 소리 꺼짐(스피커 버튼으로 켜기) (Orbit Hop) / 소리 꺼짐(스피커·M으로 켜기) (Line Inspector) | No space before the bracket. |
 | DONE | 완료 | |
 | BACK | 뒤로 | |
 | MENU | 메뉴 | |
