@@ -59,7 +59,7 @@ Game titles stay English because they are drawn as logos in the Orbitron font, a
 | PLAY | 플레이 | Main menu button. |
 | PLAY · SECTOR 2 | 플레이 · 섹터 2 | |
 | START SHIFT | 근무 시작 | Line Inspector. |
-| tap / click / press Space to start | 탭해서 시작 / 클릭해서 시작 / 스페이스 키로 시작 | Name the real input. Keys: 스페이스, 엔터, 방향키, A / D. |
+| tap / click / press Space to start | 탭해서 시작 / 클릭해서 시작 / 스페이스 키로 시작 | Name the real input. Keys: 스페이스 키 (스페이스 in short UI), 엔터, 방향키, A / D. |
 | Tap to continue / Space to continue | 탭해서 계속 / 스페이스로 계속 | |
 | HOW TO PLAY | 게임 방법 | |
 | GOT IT | 알겠어요 | |
@@ -72,7 +72,7 @@ Game titles stay English because they are drawn as logos in the Orbitron font, a
 | SCREEN SHAKE | 화면 흔들림 | |
 | VIBRATION | 진동 | |
 | not available in this browser | 이 브라우저에서는 쓸 수 없어요 | |
-| All sound is muted | 모든 소리가 꺼져 있어요 | |
+| All sound is muted | 소리가 꺼져 있어요(스피커 버튼으로 켜기) | No space before the bracket. |
 | DONE | 완료 | |
 | BACK | 뒤로 | |
 | MENU | 메뉴 | |
@@ -132,7 +132,7 @@ Game titles stay English because they are drawn as logos in the Orbitron font, a
 | LOST IN SPACE | 우주 미아! | Natural Korean idiom; short and funny. |
 | close call / CLOSE CALL +5 | 아슬아슬 / 아슬아슬! +5 | |
 | combo lost | 콤보 끊김 | |
-| gold arc | 금색 호 | "hop again before the gold arc runs out" → "금색 호가 사라지기 전에 다시 도약". |
+| gold arc | 금색 호 | "hop again before the gold arc runs out" → "금색 호가 사라지기 전에 도약" (short form for the 18-character hint limit). |
 | one tap. infinite orbits. | 탭 한 번. 궤도는 무한. | Title-screen tagline. |
 
 ## 5. Line Inspector terms
@@ -168,6 +168,9 @@ Game titles stay English because they are drawn as logos in the Orbitron font, a
 | Bouncy Critter | 통통 동물 | |
 | Pocket Rocket | 포켓 로켓 | |
 | antenna / arms / eyes / hat / bow tie / paint | 안테나 / 팔 / 눈 / 모자 / 나비넥타이 / 도색 | |
+| chevron (belt pattern) | 셰브런 | Standard loanword spelling, not 쉐브론. |
+| colour blindness | 색각 이상 (색약 for the mild form) | Not 색맹. |
+| CERTIFIED HUMAN-ADJACENT | 사람 비스무리 인증 완료 | Ticker joke; 인간 근처 reads as a location. |
 | green / yellow / red / blue | 초록 / 노랑 / 빨강 / 파랑 | Rules: "No green paint." → "초록 도색 금지." |
 | dots / stripes (colour-blind patterns) | 물방울무늬 / 줄무늬 | |
 

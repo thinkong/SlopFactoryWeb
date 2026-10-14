@@ -41,7 +41,7 @@ The English site jokes by being honest about being cheap, small and machine-made
 - **Deadpan beats exclamation.** One "!" per line at most. No ㅋㅋ, ㅎㅎ, emoji or 초성 in site copy, UI or devlogs.
 - **Don't explain the joke.** If the Korean needs a footnote to be funny, rewrite it.
 - **Puns that only work in English** (for example "No refunds (it's free)"): keep the logic, drop the wordplay. → "설치 없음. 계정 없음. 환불 없음(무료라서)."
-- **Fake-corporate tone is part of the joke** ("certified", "spec sheet", "100%"). In Korean this is 인증, 제품 사양서, 품질 보증: use them deadpan. "CERTIFIED HUMAN-ADJACENT" → "인간 근처 인증 완료".
+- **Fake-corporate tone is part of the joke** ("certified", "spec sheet", "100%"). In Korean this is 인증, 제품 사양서, 품질 보증: use them deadpan. "CERTIFIED HUMAN-ADJACENT" → "사람 비스무리 인증 완료".
 - The humour lives in site copy, devlog asides and game-over flavour lines. Instructions and settings must be plain and clear first.
 
 Reference lines (use these as the tone benchmark):
@@ -84,7 +84,7 @@ Reference lines (use these as the tone benchmark):
 | Long date (posts, game pages) | YYYY년 M월 D일 | 2026년 10월 14일 |
 | Short date (cards, lists) | YYYY. M. D. | 2026. 10. 14. |
 | Version | as in EN | v1.0.0 |
-| Keys | Korean name for Space/Enter/arrows; letters stay Latin | 스페이스, 엔터, ← / A |
+| Keys | Korean name for Space/Enter/arrows; letters stay Latin. In prose write 스페이스 키 (not 스페이스 바); short UI labels may use 스페이스 | 스페이스 키, 엔터, ← / A |
 
 ## 6. Strings with code placeholders (for engineers and translators)
 

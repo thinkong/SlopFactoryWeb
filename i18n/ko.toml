@@ -27,15 +27,15 @@ ticker_3 = "설치 없음. 계정 없음. 환불 없음(무료라서)"
 ticker_4 = "로봇이 만들고, 더 많은 로봇이 테스트"
 ticker_5 = "개발 일지 매일 업데이트*"
 ticker_6 = "*매일은 아님"
-ticker_7 = "인간 근처 인증 완료"
+ticker_7 = "사람 비스무리 인증 완료"
 
 # ---------- footer ----------
 footer_copyright = "Slop Factory. 모든 슬롭 보유. Hugo로 만들고, GitHub Pages에 올리고, 동력은 느낌적인 느낌."
 footer_rss = "RSS"
-footer_fine_print = "이 웹사이트를 만드는 동안 다친 슬롭은 없어요. 부작용으로 \"한 판만 더\"가 나타날 수 있어요."
+footer_fine_print = "이 웹사이트를 만드는 동안 다친 슬롭은 없어요. 부작용으로 '한 판만 더' 증상이 나타날 수 있어요."
 
 # ---------- home ----------
-home_kicker = "2026년 설립 &middot; 갓 나온 슬롭 매일*"  # HTML
+home_kicker = "2026년 설립 &middot; 매일 갓 나온 슬롭*"  # HTML
 home_headline = "<span class=\"slime\">슬롭</span>은 저희가<br>플레이는 여러분이"  # HTML
 home_play_games = "게임 하러 가기"
 home_read_devlogs = "개발 일지 보기"
@@ -61,7 +61,7 @@ coming_soon_games = "지금 통 안에서 보글보글 끓는 중이에요. <a h
 browse_by_tag = "태그로 찾기"
 no_posts_yet = "이 통은 아직 비었어요. 곧 다시 들러 주세요."
 back_to_blog = "블로그로 돌아가기"
-min_read = "{{ .Minutes }}분 읽기"
+min_read = "{{ .Minutes }}분 분량"
 
 # ---------- game pages ----------
 all_games = "전체 게임"
