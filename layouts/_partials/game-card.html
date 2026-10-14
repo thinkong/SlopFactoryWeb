@@ -1,0 +1,13 @@
+<article class="card game-card">
+  <a class="card-link" href="{{ .RelPermalink }}">
+    <div class="card-img">
+      {{ partial "cover.html" (dict "page" . "width" 720) }}
+      {{- with .Params.status }}<span class="sticker">{{ . }}!</span>{{ end }}
+    </div>
+    <div class="card-body">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary | plainify }}</p>
+      <span class="btn btn-small">Play now</span>
+    </div>
+  </a>
+</article>

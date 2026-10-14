@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-text">
+    <p class="kicker">Est. 2026 &middot; Fresh batch daily*</p>
+    <h1 class="meme">WE MAKE <span class="slime">SLOP</span><br>YOU PLAY IT</h1>
+    <p class="lede">{{ site.Params.description }}</p>
+    <div class="hero-actions">
+      <a class="btn" href="{{ "games/" | relURL }}">Play our games</a>
+      <a class="btn btn-ghost" href="{{ "blog/" | relURL }}">Read the devlogs</a>
+    </div>
+    <p class="fine-print">*batches not actually daily</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="vat">
+      <div class="vat-blob">{{ partial "blob.svg" . }}</div>
+      <div class="drip d1"></div><div class="drip d2"></div><div class="drip d3"></div>
+    </div>
+    <div class="conveyor"><span></span></div>
+  </div>
+</section>
+
+<section class="meter-strip" aria-label="Factory stats">
+  {{- $games := where site.RegularPages "Section" "games" }}
+  {{- $posts := where site.RegularPages "Section" "blog" }}
+  <div class="meter"><b>{{ len $games }}</b><span>games shipped</span></div>
+  <div class="meter"><b>{{ len $posts }}</b><span>devlogs written</span></div>
+  <div class="meter"><b>0</b><span>installs required</span></div>
+  <div class="meter"><b>&infin;</b><span>slop remaining</span></div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2 class="meme-sm">Our Games</h2>
+    <a href="{{ "games/" | relURL }}">See all games &rarr;</a>
+  </div>
+  <div class="grid games-grid">
+    {{- range first 3 $games.ByDate.Reverse }}
+    {{ partial "game-card.html" . }}
+    {{- end }}
+    <div class="card coming-soon">
+      <p class="meme-sm">GAME #{{ add (len $games) 1 }}</p>
+      <p>Currently bubbling in the vat. Check the blog for updates.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2 class="meme-sm">Fresh from the Blog</h2>
+    <a href="{{ "blog/" | relURL }}">All posts &rarr;</a>
+  </div>
+  <div class="grid posts-grid">
+    {{- range first 3 $posts.ByDate.Reverse }}
+    {{ partial "post-card.html" . }}
+    {{- end }}
+  </div>
+</section>
+{{ end }}

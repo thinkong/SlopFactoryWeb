@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="game">
+  <header class="post-head">
+    <a class="back" href="{{ "games/" | relURL }}">&larr; All games</a>
+    <h1 class="meme">{{ .Title }}</h1>
+    <p class="lede">{{ .Summary | plainify }}</p>
+  </header>
+
+  {{- with .Params.play }}
+  <div class="player" id="play">
+    <div class="player-frame">
+      <iframe src="{{ . }}" title="Play {{ $.Title }}" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="player-actions">
+      <a class="btn" href="{{ . }}" target="_blank" rel="noopener">Open full screen</a>
+      {{- with $.Params.controls }}<span class="controls"><b>Controls:</b> {{ . }}</span>{{ end }}
+    </div>
+  </div>
+  {{- end }}
+
+  <div class="game-layout">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    <aside class="game-facts">
+      <h2 class="meme-sm">Spec sheet</h2>
+      <dl>
+        {{- with .Params.status }}<dt>Status</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with .Params.version }}<dt>Version</dt><dd>{{ . }}</dd>{{ end }}
+        <dt>Released</dt><dd>{{ .Date.Format "Jan 2, 2006" }}</dd>
+        {{- with .Params.platforms }}<dt>Plays on</dt><dd>{{ delimit . ", " }}</dd>{{ end }}
+        <dt>Price</dt><dd>Free. Slop is a human right.</dd>
+      </dl>
+      {{- $slug := .Slug }}
+      {{- $logs := where (where site.RegularPages "Section" "blog") "Params.game" $slug }}
+      {{- with $logs }}
+      <h2 class="meme-sm">Devlogs</h2>
+      <ol class="devlog-list">
+        {{- range .ByDate }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{- end }}
+      </ol>
+      {{- end }}
+    </aside>
+  </div>
+</article>
+{{ end }}

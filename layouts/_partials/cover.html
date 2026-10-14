@@ -1,0 +1,8 @@
+{{- /* Renders a resized cover image for a page. Context: dict "page" "width" "class" */ -}}
+{{- $p := .page }}
+{{- with $p.Params.cover }}
+  {{- with $p.Resources.Get . }}
+    {{- $img := .Resize (printf "%dx jpg q78" ($.width | default 720)) }}
+    <img class="{{ $.class }}" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
+  {{- end }}
+{{- end }}

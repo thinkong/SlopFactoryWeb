@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="page-head">
+  <h1 class="meme">{{ .Title }}</h1>
+  {{- with .Params.description }}<p class="lede">{{ . }}</p>{{ end }}
+</section>
+<section class="section">
+  <div class="grid posts-grid">
+    {{- range .Pages.ByDate.Reverse }}
+    {{ partial "post-card.html" . }}
+    {{- end }}
+  </div>
+  {{- with site.Taxonomies.tags }}{{ if eq $.Section "blog" }}
+  <div class="tag-cloud">
+    <h2 class="meme-sm">Browse by tag</h2>
+    {{- range .ByCount }}
+    <a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <small>{{ .Count }}</small></a>
+    {{- end }}
+  </div>
+  {{- end }}{{ end }}
+</section>
+{{ end }}

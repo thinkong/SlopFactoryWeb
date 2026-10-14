@@ -1,0 +1,11 @@
+<article class="card post-card">
+  <a class="card-link" href="{{ .RelPermalink }}">
+    <div class="card-img">{{ partial "cover.html" (dict "page" . "width" 640) }}</div>
+    <div class="card-body">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary | plainify }}</p>
+      <span class="read-more">Read the slop &rarr;</span>
+    </div>
+  </a>
+</article>

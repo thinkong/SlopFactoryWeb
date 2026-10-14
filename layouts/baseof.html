@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }} | {{ site.Params.tagline }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+  {{- $desc := .Params.summary | default .Params.description | default site.Params.description }}
+  <meta name="description" content="{{ $desc | plainify }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ $desc | plainify }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{- with .Params.cover }}{{ with $.Resources.Get . }}
+  <meta property="og:image" content="{{ .Permalink }}">
+  {{- end }}{{ end }}
+  <meta name="theme-color" content="#14110f">
+  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  {{- range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
+  {{- end }}
+  {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body class="{{ .Section | default "home" }}">
+  <a class="skip" href="#main">Skip to the slop</a>
+  {{ partial "header.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

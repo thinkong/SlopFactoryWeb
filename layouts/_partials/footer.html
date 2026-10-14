@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="hazard" aria-hidden="true"></div>
+  <div class="footer-inner">
+    <p class="footer-logo">SLOP FACTORY</p>
+    <p>&copy; {{ now.Year }} Slop Factory. All slop reserved. Made with Hugo, hosted on GitHub Pages, powered by vibes.</p>
+    <p class="footer-links">
+      <a href="{{ "games/" | relURL }}">Our Games</a>
+      <a href="{{ "blog/" | relURL }}">Blog</a>
+      <a href="{{ "about/" | relURL }}">About</a>
+      {{- with site.Home.OutputFormats.Get "rss" }}
+      <a href="{{ .RelPermalink }}">RSS</a>
+      {{- end }}
+    </p>
+    <p class="fine-print">No slop was harmed in the making of this website. Side effects may include "just one more hop".</p>
+  </div>
+</footer>

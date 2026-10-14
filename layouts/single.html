@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-head">
+    {{- if eq .Section "blog" }}
+    <a class="back" href="{{ "blog/" | relURL }}">&larr; Back to the blog</a>
+    {{- end }}
+    <h1>{{ .Title }}</h1>
+    {{- if eq .Section "blog" }}
+    <p class="meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      &middot; {{ .ReadingTime }} min read
+      {{- with .Params.game }}{{ with site.GetPage (printf "/games/%s" .) }}
+      &middot; <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- end }}{{ end }}
+    </p>
+    {{- end }}
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{- if eq .Section "blog" }}
+  <footer class="post-foot">
+    {{- with .GetTerms "tags" }}
+    <p class="tags">{{ range . }}<a class="tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a> {{ end }}</p>
+    {{- end }}
+    <nav class="pager">
+      {{- with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>{{ else }}<span></span>{{ end }}
+      {{- with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>{{ end }}
+    </nav>
+  </footer>
+  {{- end }}
+</article>
+{{ end }}
