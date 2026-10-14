@@ -12,6 +12,11 @@
   {{- $play := . }}
   {{- if not (or (hasPrefix . "/") (strings.Contains . "://")) }}
   {{- $play = printf "%s%s" (printf "games/%s/" $.File.ContentBaseName | relURL) . }}
+  {{- /* Our builds pick their language from ?lang=, so a translated page opens the game in its
+         language. English pages leave it out and the game follows the browser language. */}}
+  {{- if and (ne $.Language.Lang hugo.Sites.Default.Language.Lang) (not (strings.Contains . "?")) }}
+  {{- $play = printf "%s?lang=%s" $play $.Language.Lang }}
+  {{- end }}
   {{- end }}
   <div class="player" id="play">
     <div class="player-frame">

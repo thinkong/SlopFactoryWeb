@@ -1,6 +1,6 @@
 # Korean style guide (ko-KR)
 
-Owner: Translator. Applies to the Korean site at `/ko/`, every Korean devlog, and the Korean UI in every game. Terms come from the [glossary](/GAM/issues/GAM-36#document-glossary); if this guide and the glossary disagree, fix one of them before shipping.
+Owner: Translator. Applies to the Korean site at `/ko/`, every Korean devlog, and the Korean UI in every game. Terms come from the [glossary](ko-glossary.md); if this guide and the glossary disagree, fix one of them before shipping.
 
 ## 1. The one-line version
 

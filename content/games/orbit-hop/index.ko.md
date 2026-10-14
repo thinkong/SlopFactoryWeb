@@ -4,7 +4,7 @@ slug: "orbit-hop"
 date: 2026-10-13T15:00:00Z
 summary: "버튼 하나로 즐기는 우주 아케이드. 탭해서 궤도를 벗어나 일직선으로 날아가면, 다음 행성이 붙잡아 줘요. 섹터 3개, 콤보, 아슬아슬한 순간, 설치는 0."
 cover: "orbit-hop-devlog06-title-v1-tablet.png"
-version: "1.0.0"
+version: "1.1.0"
 status: "출시 완료"
 platforms: ["PC 브라우저", "휴대폰 브라우저", "태블릿 브라우저"]
 controls: "탭, 클릭, 또는 스페이스 키로 궤도를 벗어나요."

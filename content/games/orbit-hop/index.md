@@ -4,7 +4,7 @@ slug: "orbit-hop"
 date: 2026-10-13T15:00:00Z
 summary: "A one-button space arcade game. Tap to let go of your orbit, fly in a straight line, and get caught by the next planet. Three sectors, combos, close calls, and zero install."
 cover: "orbit-hop-devlog06-title-v1-tablet.png"
-version: "1.0.0"
+version: "1.1.0"
 status: "Released"
 platforms: ["Desktop browser", "Phone browser", "Tablet browser"]
 controls: "Tap, click, or press Space to let go of your orbit."

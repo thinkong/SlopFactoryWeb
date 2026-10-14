@@ -1,6 +1,6 @@
 # Korean glossary (EN → KO)
 
-Owner: Translator. Source: the live site https://slopfactory.a-bba.dev/ (Home, About, Our Games, Orbit Hop and Line Inspector pages, both devlogs) and the shipped UI strings in `orbit-hop/play/game.js` and `line-inspector/play/game.js`. Read the [style guide](/GAM/issues/GAM-36#document-style-guide) first for tone, particles and length rules.
+Owner: Translator. Source: the live site https://slopfactory.a-bba.dev/ (Home, About, Our Games, Orbit Hop and Line Inspector pages, both devlogs) and the shipped UI strings in `orbit-hop/play/game.js` and `line-inspector/play/game.js`. Read the [style guide](ko-style-guide.md) first for tone, particles and length rules.
 
 **How to use this table**
 

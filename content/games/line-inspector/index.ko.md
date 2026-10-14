@@ -4,7 +4,7 @@ slug: "line-inspector"
 date: 2026-10-14T06:30:00Z
 summary: "당신은 장난감 공장 라인 끝의 검수원이에요. 근무마다 바뀌는 규정집에 맞춰 장난감을 통과시키거나 불량 처리하세요. 3번 틀리면 라인에서 빠져요."
 cover: "line-inspector-devlog06-title-best-tablet.png"
-version: "1.0.0"
+version: "1.1.0"
 status: "출시 완료"
 platforms: ["PC 브라우저", "휴대폰 브라우저", "태블릿 브라우저"]
 controls: "오른쪽으로 스와이프하거나 → 또는 D 키로 통과. 왼쪽으로 스와이프하거나 ← 또는 A 키로 불량. 버튼을 눌러도 돼요."
