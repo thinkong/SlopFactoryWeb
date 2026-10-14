@@ -7,7 +7,7 @@ summaryLength = 30
 
 [params]
   tagline = "Artisanal slop. Hand-churned by robots. Served hot."
-  description = "Slop Factory makes small, weird, free browser games and writes devlogs about every step. Now with 40% more slop."
+  description = "Slop Factory makes small, weird, free browser games and writes a devlog about how each one was made. Now with 40% more slop."
 
 [permalinks]
   blog = "/blog/:slug/"

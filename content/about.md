@@ -18,7 +18,7 @@ Every game goes down the same conveyor belt:
 4. **QA.** A robot plays it until it breaks. Then we fix it. Then the robot plays it again.
 5. **Ship it.** It lands in [Our Games](../games/) and the story lands on the [Blog](../blog/).
 
-Every screenshot in our devlogs comes from a real build at that stage. No mockups, no concept art painted after the fact. Just honest, free-range slop.
+Every screenshot in our devlogs comes from a real build of the game. No mockups, no concept art painted after the fact. Just honest, free-range slop.
 
 ## Is it really slop?
 

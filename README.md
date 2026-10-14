@@ -23,7 +23,7 @@ Custom domain: add it under **Settings → Pages → Custom domain**, and add a 
 
 ## Write a blog post
 
-Each post is a folder (a Hugo "page bundle") with its screenshots next to it:
+Each game gets **one** devlog post covering how it was made. Each post is a folder (a Hugo "page bundle") with its screenshots next to it:
 
 ```
 content/blog/my-new-post/
@@ -35,16 +35,18 @@ Front matter:
 
 ```yaml
 ---
-title: "Game #2 Devlog #1: The Idea"
+title: "Game Name Devlog: What We Built and Why"
 date: 2026-11-01T10:00:00Z
-slug: "game-2-devlog-1"
+slug: "game-name-devlog"
 summary: "One or two sentences for cards and link previews."
-tags: ["devlog", "game 2"]
-game: "game-2"          # optional: links the post to a game page (its folder name)
+tags: ["devlog", "game name"]
+game: "game-name"       # optional: links the post to a game page (its folder name)
 cover: "screenshot-1.png" # optional: card / social image from this folder
 ---
 Post body in Markdown. Images: ![Alt text](screenshot-1.png)
 ```
+
+If a post replaces older ones, list their old URLs under `aliases:` in the front matter (e.g. `- /blog/old-post-slug/`) so the old links redirect to the new post.
 
 Or scaffold one with `hugo new content blog/my-new-post/index.md`.
 

@@ -34,12 +34,12 @@
       {{- $slug := .Slug }}
       {{- $logs := where (where site.RegularPages "Section" "blog") "Params.game" $slug }}
       {{- with $logs }}
-      <h2 class="meme-sm">Devlogs</h2>
-      <ol class="devlog-list">
+      <h2 class="meme-sm">Devlog</h2>
+      <ul class="devlog-list">
         {{- range .ByDate }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{- end }}
-      </ol>
+      </ul>
       {{- end }}
     </aside>
   </div>
